@@ -44,7 +44,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ### 1. Plotly Charts Selector
 
-*   **Script:** [`00_plotly-charts-selector.py`](./00_plotly-charts-selector.py)
+*   **Script:** [`00_plotly-charts-selector.py`](./charts/plotly/00_plotly-charts-selector.py)
 *   **Description:** This application demonstrates how to dynamically select and display different Plotly charts within a Trame application. It serves as a foundational example for integrating Plotly with Trame and showcases a responsive UI for chart selection.
 *   **Image:**
     ![Plotly Charts Selector](docs/images/00_plotly-charts-selector.png)
@@ -53,7 +53,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ### 2. Resizable Plotly Charts
 
-*   **Script:** [`01_plotly-charts-resizable.py`](./01_plotly-charts-resizable.py)
+*   **Script:** [`01_plotly-charts-resizable.py`](./charts/plotly/01_plotly-charts-resizable.py)
 *   **Description:** This example builds upon basic chart display by demonstrating how to make Plotly charts resizable within the Trame UI. It showcases handling layout changes and ensuring charts adapt to their container size.
 *   **Image:**
 
@@ -64,7 +64,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ### 3. Deck.gl Mapping Demo
 
-*   **Script:** [`00_mapping-demo.py`](./00_mapping-demo.py)
+*   **Script:** [`00_mapping-demo.py`](./pydeck/00_mapping-demo.py)
 *   **Description:** This application showcases the integration of Deck.gl with Trame for visualizing geospatial data. It demonstrates how to create interactive maps with multiple data layers (e.g., bike rentals, BART stops) using PyDeck and Mapbox, all within a modern Trame 3 / Vue 3 structure.
 *   **Image:**
     ![Deck.gl Mapping Demo](docs/images/00_mapping-demo.png)
@@ -73,7 +73,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ### 4. Interactive Uber Pickups Visualization
 
-*   **Script:** [`01_uber-nyc-pickups.py`](./01_uber-nyc-pickups.py)
+*   **Script:** [`01_uber-nyc-pickups.py`](./pydeck/01_uber-nyc-pickups.py)
 *   **Description:** Visualizes Uber pickup data across New York City using Deck.gl for heatmap layers on multiple maps (Overall NYC, JFK, Newark, and LaGuardia airports). Features an Altair-based histogram displaying pickups per minute for a user-selected hour. Includes a slider to filter data by the hour of the day. Demonstrates reactive updates, a Vuetify 3 grid layout, and Mapbox API integration for base maps. Requires a `MAPBOX_API_KEY` environment variable for map rendering.
 *   **Image:**
     ![Interactive Uber Pickups Visualization](docs/images/01_uber-nyc-pickups.png)
@@ -96,7 +96,7 @@ Below are the examples included in this repository. Each example demonstrates sp
     ```
 4.  Run an example script:
     ```bash
-    python 00_plotly-charts-selector.py
+    python charts/plotly/00_plotly-charts-selector.py
     ```
 5.  Open your web browser and navigate to the URL provided in the console (usually `http://localhost:8080`).
 
