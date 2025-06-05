@@ -71,6 +71,15 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### 4. Interactive Uber Pickups Visualization
+
+*   **Script:** [`01_uber-nyc-pickups.py`](./01_uber-nyc-pickups.py)
+*   **Description:** Visualizes Uber pickup data across New York City using Deck.gl for heatmap layers on multiple maps (Overall NYC, JFK, Newark, and LaGuardia airports). Features an Altair-based histogram displaying pickups per minute for a user-selected hour. Includes a slider to filter data by the hour of the day. Demonstrates reactive updates, a Vuetify 3 grid layout, and Mapbox API integration for base maps. Requires a `MAPBOX_API_KEY` environment variable for map rendering.
+*   **Image:**
+    ![Interactive Uber Pickups Visualization](docs/images/01_uber-nyc-pickups.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
@@ -81,9 +90,9 @@ Below are the examples included in this repository. Each example demonstrates sp
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     ```
-3.  Install the required dependencies (you might need to create a `requirements.txt` file based on the imports in the scripts, typically `trame`, `trame-vuetify`, `plotly`):
+3.  Install the required dependencies using the `requirements.txt` file:
     ```bash
-    pip install trame trame-vuetify plotly
+    pip install -r requirements.txt
     ```
 4.  Run an example script:
     ```bash
