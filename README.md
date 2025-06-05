@@ -16,7 +16,7 @@ A recommended approach for structuring Trame 3 applications is to use the `@Tram
 
 ```python
 from trame.app import get_server, TrameApp
-from trame.ui.vuetify3 import VAppLayout # Or other UI components
+from trame.ui.vuetify import VAppLayout # Or other UI components
 
 @TrameApp()
 class MyApp(TrameApp):
@@ -47,10 +47,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Script:** [`00_plotly-charts-selector.py`](./00_plotly-charts-selector.py)
 *   **Description:** This application demonstrates how to dynamically select and display different Plotly charts within a Trame application. It serves as a foundational example for integrating Plotly with Trame and showcases a responsive UI for chart selection.
 *   **Image:**
-    ```
-    ![Plotly Charts Selector](./docs/images/00_plotly-charts-selector.png)
-    ```
-    *(Please replace with the actual path and image if different)*
+    ![Plotly Charts Selector](docs/images/00_plotly-charts-selector.png)
 
 ---
 
@@ -59,10 +56,18 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Script:** [`01_plotly-charts-resizable.py`](./01_plotly-charts-resizable.py)
 *   **Description:** This example builds upon basic chart display by demonstrating how to make Plotly charts resizable within the Trame UI. It showcases handling layout changes and ensuring charts adapt to their container size.
 *   **Image:**
-    ```
-    ![Resizable Plotly Charts](./docs/images/01_plotly-charts-resizable.png)
-    ```
-    *(Please replace with the actual path and image if different)*
+
+    ![Resizable Plotly Charts](docs/images/01_plotly-charts-resizable.png)
+
+
+---
+
+### 3. Deck.gl Mapping Demo
+
+*   **Script:** [`00_mapping-demo.py`](./00_mapping-demo.py)
+*   **Description:** This application showcases the integration of Deck.gl with Trame for visualizing geospatial data. It demonstrates how to create interactive maps with multiple data layers (e.g., bike rentals, BART stops) using PyDeck and Mapbox, all within a modern Trame 3 / Vue 3 structure.
+*   **Image:**
+    ![Deck.gl Mapping Demo](docs/images/00_mapping-demo.png)
 
 ---
 
