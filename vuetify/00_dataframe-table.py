@@ -1,4 +1,35 @@
 #!/usr/bin/env -S uv run --script
+# -----------------------------------------------------------------------------
+# Trame Vuetify DataFrame Table Demo (Trame 3 / Vue 3)
+#
+# This example demonstrates how to display a pandas DataFrame in a Vuetify 3
+# VDataTable within a Trame 3 application. It showcases features like
+# searching, sorting, pagination, and item selection, all refactored
+# into a modern class-based structure.
+#
+# Running if uv is available:
+#   uv run ./00_dataframe-table.py
+#   or ./00_dataframe-table.py
+#
+# Required Packages:
+#   (Handled by the /// script block below if using uv run)
+#   pip install "trame[app]" trame-vuetify pandas
+#
+# To run as a Desktop Application:
+#   python 00_dataframe-table.py --app
+#
+# Run in Jupyter Lab / Notebook:
+#   Rename and make sure this script ('dataframe_table.py') is renamed and in the same
+#   directory as your notebook, or in a directory included in Python's path.
+#   Then, in a cell, execute:
+#
+#   from dataframe_table import DataFrameTableApp
+#   app = DataFrameTableApp()
+#   app.server.show()
+#
+# To run as a Web Application (default):
+#   python 00_dataframe-table.py --server
+# -----------------------------------------------------------------------------
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
@@ -7,6 +38,7 @@
 #     "trame[app]",
 # ]
 # ///
+# -----------------------------------------------------------------------------
 
 import pandas as pd
 
