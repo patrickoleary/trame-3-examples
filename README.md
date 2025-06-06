@@ -88,6 +88,15 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+
+#### 2. Vuetify 3 Menu
+*   **Script:** [`01_menu.py`](./vuetify/01_menu.py)
+*   **Description:** This example demonstrates a simple Vuetify 3 `VMenu` component within a Trame 3 application. It shows how to create a menu with items that trigger a Python callback when clicked, all refactored into a modern class-based structure.
+*   **Image:**
+    ![Vuetify 3 Menu](docs/images/01_menu.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
