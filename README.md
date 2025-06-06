@@ -80,6 +80,15 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### 5. Vuetify 3 DataFrame Table
+
+*   **Script:** [`00_dataframe-table-vue3.py`](./vuetify/00_dataframe-table-vue3.py)
+*   **Description:** This example demonstrates how to display a pandas DataFrame using the Vuetify 3 `VDataTable` component within a Trame 3 application. It showcases features like reactive search, sorting, selection, and dynamic grouping. The application is built using a modern class-based structure.
+*   **Image:**
+    ![Vuetify 3 DataFrame Table](docs/images/00_dataframe-table-vue3.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
