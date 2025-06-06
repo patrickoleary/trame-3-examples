@@ -42,8 +42,9 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### 1. Plotly Charts Selector
+### Charts / Plotly Examples
 
+#### 1. Plotly Charts Selector
 *   **Script:** [`00_plotly-charts-selector.py`](./charts/plotly/00_plotly-charts-selector.py)
 *   **Description:** This application demonstrates how to dynamically select and display different Plotly charts within a Trame application. It serves as a foundational example for integrating Plotly with Trame and showcases a responsive UI for chart selection.
 *   **Image:**
@@ -51,19 +52,17 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### 2. Resizable Plotly Charts
-
+#### 2. Resizable Plotly Charts
 *   **Script:** [`01_plotly-charts-resizable.py`](./charts/plotly/01_plotly-charts-resizable.py)
 *   **Description:** This example builds upon basic chart display by demonstrating how to make Plotly charts resizable within the Trame UI. It showcases handling layout changes and ensuring charts adapt to their container size.
 *   **Image:**
-
     ![Resizable Plotly Charts](docs/images/01_plotly-charts-resizable.png)
-
 
 ---
 
-### 3. Deck.gl Mapping Demo
+### PyDeck Examples
 
+#### 1. Deck.gl Mapping Demo
 *   **Script:** [`00_mapping-demo.py`](./pydeck/00_mapping-demo.py)
 *   **Description:** This application showcases the integration of Deck.gl with Trame for visualizing geospatial data. It demonstrates how to create interactive maps with multiple data layers (e.g., bike rentals, BART stops) using PyDeck and Mapbox, all within a modern Trame 3 / Vue 3 structure.
 *   **Image:**
@@ -71,8 +70,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### 4. Interactive Uber Pickups Visualization
-
+#### 2. Interactive Uber Pickups Visualization
 *   **Script:** [`01_uber-nyc-pickups.py`](./pydeck/01_uber-nyc-pickups.py)
 *   **Description:** Visualizes Uber pickup data across New York City using Deck.gl for heatmap layers on multiple maps (Overall NYC, JFK, Newark, and LaGuardia airports). Features an Altair-based histogram displaying pickups per minute for a user-selected hour. Includes a slider to filter data by the hour of the day. Demonstrates reactive updates, a Vuetify 3 grid layout, and Mapbox API integration for base maps. Requires a `MAPBOX_API_KEY` environment variable for map rendering.
 *   **Image:**
@@ -80,8 +78,9 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### 5. Vuetify 3 DataFrame Table
+### Vuetify Examples
 
+#### 1. Vuetify 3 DataFrame Table
 *   **Script:** [`00_dataframe-table-vue3.py`](./vuetify/00_dataframe-table-vue3.py)
 *   **Description:** This example demonstrates how to display a pandas DataFrame using the Vuetify 3 `VDataTable` component within a Trame 3 application. It showcases features like reactive search, sorting, selection, and dynamic grouping. The application is built using a modern class-based structure.
 *   **Image:**
