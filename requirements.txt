@@ -1,6 +1,6 @@
 trame
 trame-components
-trame-deckgl    
+trame-deckgl
 trame-markdown
 trame-matplotlib
 trame-plotly
