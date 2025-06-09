@@ -60,6 +60,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### Charts / Altair-Vega Examples
+
+#### 1. Altair Charts Selector
+*   **Script:** [`00_altair-charts-selector.py`](./charts/altair-vega/00_altair-charts-selector.py)
+*   **Description:** This application demonstrates dynamic selection and display of various Altair charts (e.g., Scatter Matrix, US Income By State, StreamGraph) using `trame.widgets.vega.Figure`. It's built with a modern Trame 3 / Vue 3 class-based structure and highlights compatibility considerations for Altair and Vega-Lite versions.
+*   **Image:**
+    ![Altair Charts Selector](docs/00_altair-charts-selector.png)
+
+---
+
 ### PyDeck Examples
 
 #### 1. Mapping Demo
