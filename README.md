@@ -70,6 +70,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### Charts / Matplotlib Examples
+
+#### 1. Matplotlib Charts Selector
+*   **Script:** [`00_matplotlib-charts.py`](./charts/matplotlib/00_matplotlib-charts.py)
+*   **Description:** This application demonstrates dynamic selection and display of various Matplotlib charts. It showcases responsive chart rendering using `trame.SizeObserver` to adapt to browser window resizing and high-DPI displays. The example is built with a modern Trame 3 / Vue 3 class-based structure.
+*   **Image:**
+    ![Matplotlib Charts Selector](docs/images/00_matplotlib-charts.png)
+
+---
+
 ### PyDeck Examples
 
 #### 1. Mapping Demo

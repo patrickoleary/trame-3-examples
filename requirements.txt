@@ -7,3 +7,5 @@ numpy
 altair==5.1.2
 pydeck
 trame-router
+matplotlib
+trame-matplotlib
