@@ -34,6 +34,9 @@
 #   (Handled by the /// pyproject block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-vega altair==5.1.2 vega_datasets
 #
+# Run as a Desktop Application:
+#   python 00_altair-charts-selector.py --app
+#
 # Run in Jupyter Lab / Notebook:
 #   Rename and make sure this script ('00_altair-charts-selector.py' to 'altair_selector_app.py')
 #   is in the same directory as your notebook, or in a directory included in Python's path.
