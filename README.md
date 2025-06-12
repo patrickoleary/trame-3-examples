@@ -2,6 +2,18 @@
 
 This repository showcases modern Trame application development using Trame 3+, Vue 3, and Vuetify 3. The examples demonstrate best practices, including the use of the `@TrameApp()` decorator and an inheritance-based application structure.
 
+## Table of Contents
+- [Migrating from Trame 2 / Vue 2 / Vuetify 2](#migrating-from-trame-2--vue-2--vuetify-2)
+  - [Modern Application Structure: `@TrameApp()` and Inheritance](#modern-application-structure-trameapp-and-inheritance)
+- [Examples](#examples)
+  - [Charts / Plotly Examples](#charts--plotly-examples)
+  - [Charts / Altair-Vega Examples](#charts--altair-vega-examples)
+  - [Charts / Matplotlib Examples](#charts--matplotlib-examples)
+  - [PyDeck Examples](#pydeck-examples)
+  - [Vuetify Examples](#vuetify-examples)
+  - [VTK / Client-OnlyExamples](#vtk--client-onlyexamples)
+- [Running the Examples](#running-the-examples)
+
 ## Migrating from Trame 2 / Vue 2 / Vuetify 2
 
 Moving to the latest versions of Trame, Vue, and Vuetify offers significant improvements in performance, features, and developer experience. Here are some key considerations:
