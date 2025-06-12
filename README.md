@@ -122,6 +122,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### VTK Examples
+
+#### 1. Client-Only Rendering Cheatsheet
+*   **Script:** [`cheatsheet.py`](./vtk/00_ClientOnly/cheatsheet.py)
+*   **Description:** This application demonstrates client-only rendering with VTK.js in Trame. It features a cone whose resolution can be dynamically updated using a slider. This example highlights how to use `vtk.VtkView`, `VtkGeometryRepresentation`, and `VtkAlgorithm` for client-side rendering without a server-side VTK pipeline.
+*   **Image:**
+    ![Client-Only Rendering Cheatsheet](docs/images/vtk_client_only_cheatsheet.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
