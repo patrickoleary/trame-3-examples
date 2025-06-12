@@ -1,4 +1,16 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+#     "trame-deckgl",
+#     "trame-vega",
+#     "altair==5.1.2",
+#     "pandas",
+#     "pydeck",
+#     "numpy",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Deck.gl and Vega Uber Pickups Demo (Trame 3 / Vue 3)
 #
@@ -12,7 +24,7 @@
 #   or ./01_uber-nyc-pickups.py
 #
 # Required Packages:
-#   (Handled by the /// script block below if using uv run)
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-deckgl trame-vega altair==5.1.2 pandas pydeck numpy
 #
 # To run as a Desktop Application:
@@ -33,19 +45,6 @@
 # IMPORTANT: Set your MAPBOX_API_KEY environment variable for the maps to render.
 # Example: export MAPBOX_API_KEY="your_actual_mapbox_api_key_here"
 # -----------------------------------------------------------------------------
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#     "pandas",
-#     "pydeck",
-#     "numpy",
-#     "altair==5.1.2",
-#     "trame-deckgl",
-#     "trame-vega",
-#     "trame-vuetify",
-#     "trame[app]",
-# ]
-# ///
 # -----------------------------------------------------------------------------
 
 import os

@@ -1,4 +1,10 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Vuetify Menu Demo (Trame 3 / Vue 3)
 #
@@ -11,7 +17,7 @@
 #   or ./01_menu.py
 #
 # Required Packages:
-#   (Handled by the /// script block below if using uv run)
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify
 #
 # To run as a Desktop Application:
@@ -29,13 +35,6 @@
 # To run as a Web Application (default):
 #   python 01_menu.py --server
 # -----------------------------------------------------------------------------
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#     "trame-vuetify",
-#     "trame[app]",
-# ]
-# ///
 
 from trame.app import TrameApp
 from trame.ui.vuetify3 import SinglePageLayout

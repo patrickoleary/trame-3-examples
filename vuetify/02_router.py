@@ -1,4 +1,11 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+#     "trame-router",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Router Demo (Trame 3 / Vue 3)
 #
@@ -11,7 +18,7 @@
 #   or ./02_router.py
 #
 # Required Packages:
-#   (Handled by the /// script block below if using uv run)
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-router
 #
 # To run as a Desktop Application:
@@ -29,14 +36,6 @@
 # To run as a Web Application (default):
 #   python 02_router.py --server
 # -----------------------------------------------------------------------------
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#     "trame-vuetify",
-#     "trame-router",
-#     "trame[app]",
-# ]
-# ///
 # -----------------------------------------------------------------------------
 
 from trame.app import TrameApp

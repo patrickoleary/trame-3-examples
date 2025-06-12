@@ -1,4 +1,13 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+#     "trame-deckgl",
+#     "pydeck",
+#     "pandas",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Deck.gl Mapping Demo
 #
@@ -7,6 +16,7 @@
 #   or ./00_mapping-demo.py
 #
 # Required Packages:
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-deckgl pydeck pandas
 #
 # Run as a Desktop Application:
@@ -24,18 +34,7 @@
 # Run as a Web Application (default):
 #   python 00_mapping-demo.py --server
 # -----------------------------------------------------------------------------
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#     "pandas",
-#     "pydeck",
-#     "trame-deckgl",
-#     "trame-vuetify",
-#     "trame[app]",
-# ]
-# ///
 # -----------------------------------------------------------------------------
-
 import os
 import pandas as pd
 import pydeck as pdk

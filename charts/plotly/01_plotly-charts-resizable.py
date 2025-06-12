@@ -1,4 +1,13 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+#     "trame-plotly",
+#     "plotly",
+#     "pandas",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Plotly Chart Resizable Example
 #
@@ -12,6 +21,7 @@
 #   or ./01_plotly-charts-resizable.py
 #
 # Required Packages:
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-plotly plotly pandas
 #
 # Run as a Desktop Application:

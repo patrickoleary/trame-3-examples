@@ -1,6 +1,5 @@
 #!/usr/bin/env -S uv run --script
-# /// pyproject
-# [project]
+# requires-python = ">=3.10"
 # dependencies = [
 #   "trame[app]",
 #   "trame-vuetify",

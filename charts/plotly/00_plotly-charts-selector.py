@@ -1,4 +1,13 @@
 #!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
+#     "trame[app]",
+#     "trame-vuetify",
+#     "trame-plotly",
+#     "plotly",
+#     "pandas",
+# ]
+# ///
 # -----------------------------------------------------------------------------
 # Trame Plotly Chart Selector
 #
@@ -7,6 +16,7 @@
 #   or ./00_plotly-charts-selector.py
 #
 # Required Packages:
+#   (Handled by the script block above if using uv run)
 #   pip install "trame[app]" trame-vuetify trame-plotly plotly pandas
 #
 # Run as a Desktop Application:
@@ -24,16 +34,6 @@
 #   python 00_plotly-charts-selector.py --server
 #   # Access via the URLs provided in the console (e.g., http://localhost:8080)
 # -----------------------------------------------------------------------------
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#     "pandas",
-#     "plotly",
-#     "trame-plotly",
-#     "trame-vuetify",
-#     "trame[app]",
-# ]
-# ///
 # -----------------------------------------------------------------------------
 from trame.app import TrameApp
 from trame.decorators import change

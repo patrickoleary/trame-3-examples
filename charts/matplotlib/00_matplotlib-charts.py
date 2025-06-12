@@ -1,14 +1,15 @@
-# /// script
-# requires = [
+#!/usr/bin/env -S uv run --script
+# requires-python = ">=3.10"
+# dependencies = [
 #     "trame",
-#     "trame-vuetify3",
+#     "trame-vuetify",
 #     "trame-matplotlib",
 #     "matplotlib",
 #     "numpy",
 # ]
 # ///
 #
-# -----------------------------------------------------------------------------
+# --------------------------------------
 # Trame-Vuetify3 Matplotlib Chart Viewer
 # --------------------------------------
 #
@@ -45,6 +46,8 @@
 #
 # Run as a Web Application (default):
 #   python 00_matplotlib-charts.py --server
+#
+#-------
 
 import matplotlib.pyplot as plt
 import numpy as np
