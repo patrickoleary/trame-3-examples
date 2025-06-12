@@ -122,13 +122,21 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### VTK Examples
+### VTK / Client-OnlyExamples
 
-#### 1. Client-Only Rendering Cheatsheet
+#### 1.  Cheatsheet
 *   **Script:** [`cheatsheet.py`](./vtk/00_ClientOnly/cheatsheet.py)
-*   **Description:** This application demonstrates client-only rendering with VTK.js in Trame. It features a cone whose resolution can be dynamically updated using a slider. This example highlights how to use `vtk.VtkView`, `VtkGeometryRepresentation`, and `VtkAlgorithm` for client-side rendering without a server-side VTK pipeline.
+*   **Description:** This application demonstrates client-only rendering and interaction with VTK.js in Trame. It features a cone whose resolution can be dynamically updated using a slider. This example highlights how to use `vtk.VtkView`, `VtkGeometryRepresentation`, and `VtkAlgorithm` for client-side rendering without a server-side VTK pipeline.
 *   **Image:**
-    ![Client-Only Rendering Cheatsheet](docs/images/vtk_client_only_cheatsheet.png)
+    ![Client-Only Cheatsheet](docs/images/cheatsheet.png)
+
+---
+
+#### 2. Client-Side Cone
+*   **Script:** [`client-side-cone.py`](./vtk/00_ClientOnly/client-side-cone.py)
+*   **Description:** This application demonstrates a basic client-side VTK cone rendering. Users can adjust the cone's resolution using a slider. The example is built using a modern Trame 3 class-based structure and showcases client-only rendering with Vue 3/Vuetify 3.
+*   **Image:**
+    ![Client-Side Cone](docs/images/client-side-cone.png)
 
 ---
 
