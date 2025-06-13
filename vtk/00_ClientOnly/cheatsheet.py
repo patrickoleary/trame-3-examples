@@ -6,8 +6,8 @@
 #     "trame-vtk",
 # ]
 # ///
-
-# # Trame VTK Client-Only Rendering Cheatsheet
+# -----------------------------------------------------------------------------
+# Trame VTK Client-Only Rendering Cheatsheet
 #
 # This application demonstrates client-only rendering with VTK.js in Trame.
 # It features a cone whose resolution can be dynamically updated using a slider.
