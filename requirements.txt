@@ -14,3 +14,4 @@ numpy
 altair==5.1.2
 pydeck
 matplotlib
+vtk

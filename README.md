@@ -11,7 +11,8 @@ This repository showcases modern Trame application development using Trame 3+, V
   - [Charts / Matplotlib Examples](#charts--matplotlib-examples)
   - [PyDeck Examples](#pydeck-examples)
   - [Vuetify Examples](#vuetify-examples)
-  - [VTK / Client-OnlyExamples](#vtk--client-onlyexamples)
+  - [VTK / ClientOnly Examples](#vtk--clientonly-examples)
+  - [VTK / SimpleCone Examples](#vtk--simplecone-examples)
 - [Running the Examples](#running-the-examples)
 
 ## Migrating from Trame 2 / Vue 2 / Vuetify 2
@@ -134,7 +135,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-### VTK / Client-OnlyExamples
+### VTK / ClientOnly Examples
 
 #### 1.  Cheatsheet
 *   **Script:** [`cheatsheet.py`](./vtk/00_ClientOnly/cheatsheet.py)
@@ -149,6 +150,15 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates a basic client-side VTK cone rendering. Users can adjust the cone's resolution using a slider. The example is built using a modern Trame 3 class-based structure and showcases client-only rendering with Vue 3/Vuetify 3.
 *   **Image:**
     ![Client-Side Cone](docs/images/client-side-cone.png)
+
+---
+
+### VTK / SimpleCone Examples
+
+#### 1. Server-Side Cone (ClientView)
+*   **Script:** [`01_SimpleCone/ClientView.py`](./vtk/01_SimpleCone/ClientView.py)
+*   **Description:** This application demonstrates server-side VTK rendering with Trame. A cone's resolution is controlled by a slider, with the VTK pipeline running on the server and the resulting geometry pushed to the client. The example is built using a modern Trame 3 class-based structure and showcases how to use `vtk.VtkPolyData` to display server-side geometry.
+*   **Image:** (Image to be added: `docs/images/ClientView.png`)
 
 ---
 
