@@ -163,6 +163,14 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+#### 2. Client-Side Cone (LocalRendering)
+*   **Script:** [`01_SimpleCone/LocalRendering.py`](./vtk/01_SimpleCone/LocalRendering.py)
+*   **Description:** This application demonstrates client-side VTK rendering using `VtkLocalView`. The entire VTK pipeline, including the render window, is managed in Python on the server, and `VtkLocalView` renders the scene directly in the browser. A slider controls the cone's resolution. This example showcases a modern Trame 3 class-based structure for local rendering.
+*   **Image:**
+    ![LocalRendering](docs/images/LocalRendering.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
