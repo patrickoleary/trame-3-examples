@@ -171,6 +171,14 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+#### 3. Server-Side Cone (RemoteRendering)
+*   **Script:** [`01_SimpleCone/RemoteRendering.py`](./vtk/01_SimpleCone/RemoteRendering.py)
+*   **Description:** This application demonstrates server-side rendering with `VtkRemoteView`. The VTK pipeline runs on the server, and rendered images are streamed to the client. It includes a slider to control the cone's resolution and a commented-out implementation for advanced event handling, showing how to capture the full event payload (e.g., mouse position, keys) from the client.
+*   **Image:**
+    ![RemoteRendering](docs/images/RemoteRendering.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
