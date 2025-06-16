@@ -13,6 +13,7 @@ This repository showcases modern Trame application development using Trame 3+, V
   - [Vuetify Examples](#vuetify-examples)
   - [VTK / ClientOnly Examples](#vtk--clientonly-examples)
   - [VTK / SimpleCone Examples](#vtk--simplecone-examples)
+  - [VTK / ContourGeometry Examples](#vtk--contourgeometry-examples)
 - [Running the Examples](#running-the-examples)
 
 ## Migrating from Trame 2 / Vue 2 / Vuetify 2
@@ -176,6 +177,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates server-side rendering with `VtkRemoteView`. The VTK pipeline runs on the server, and rendered images are streamed to the client. It includes a slider to control the cone's resolution and a commented-out implementation for advanced event handling, showing how to capture the full event payload (e.g., mouse position, keys) from the client.
 *   **Image:**
     ![RemoteRendering](docs/images/RemoteRendering.png)
+
+---
+
+### VTK / ContourGeometry Examples
+
+#### 1. Client-Side Contour Visualization
+*   **Script:** [`02_ContourGeometry/ClientView.py`](./vtk/02_ContourGeometry/ClientView.py)
+*   **Description:** This application demonstrates how to visualize the output of a VTK contour filter with client-side rendering using `VtkLocalView`. It allows the user to dynamically change the contour value with a slider and see the resulting geometry update in real-time. The example is built with a modern Trame 3 class-based structure.
+*   **Image:**
+    ![Contour Geometry](docs/images/02_ClientView.png)
 
 ---
 
