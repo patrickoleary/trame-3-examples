@@ -7,15 +7,15 @@
 # ]
 # ///
 # -----------------------------------------------------------------------------
-# Trame VTK Remote Rendering Cone (RemoteRendering)
+# Trame VTK Off-Screen Remote Rendering Cone (RemoteRendering)
 #
-# This example demonstrates a basic VTK application with remote rendering.
+# This example demonstrates a basic VTK application with off-screen remote rendering.
 # It showcases how to create a simple VTK pipeline, manage application state,
 # and build a user interface with Trame.
 #
 # **Key Features:**
 #
-# - **Remote Rendering:** The VTK rendering happens on the server-side.
+# - **Off-Screen Remote Rendering:** The VTK rendering happens on the server-side in an off-screen buffer.
 # - **State Management:** The cone's resolution is managed as a reactive state variable.
 # - **UI Components:** A slider controls the resolution, and a `VtkRemoteView` displays the rendered image.
 # - **Class-based Structure:** The application is organized into a class for better structure and reusability.
@@ -130,6 +130,8 @@ class RemoteRenderingApp(TrameApp):
         self.renderer = vtk.vtkRenderer()
         self.render_window = vtk.vtkRenderWindow()
         self.render_window.AddRenderer(self.renderer)
+        self.render_window.SetOffScreenRendering(1)
+
         self.render_window_interactor = vtk.vtkRenderWindowInteractor()
         self.render_window_interactor.SetRenderWindow(self.render_window)
         self.render_window_interactor.GetInteractorStyle().SetCurrentStyleToTrackballCamera()
@@ -155,7 +157,7 @@ class RemoteRenderingApp(TrameApp):
 
     def _initialize_state(self):
         """Initialize the application's state."""
-        self.state.trame__title = "VTK Remote Rendering"
+        self.state.trame__title = "VTK Off-Screen Remote Rendering"
         self.state.resolution = 6
 
     @change("resolution")
