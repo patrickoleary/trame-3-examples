@@ -184,9 +184,25 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 #### 1. Client-Side Contour Visualization
 *   **Script:** [`02_ContourGeometry/ClientView.py`](./vtk/02_ContourGeometry/ClientView.py)
-*   **Description:** This application demonstrates how to visualize the output of a VTK contour filter with client-side rendering using `VtkLocalView`. It allows the user to dynamically change the contour value with a slider and see the resulting geometry update in real-time. The example is built with a modern Trame 3 class-based structure.
+*   **Description:** This application demonstrates visualizing a VTK contour filter's output by sending the generated geometry (`VtkPolyData`) to the client for rendering. A slider dynamically changes the contour value, and the updated geometry is pushed to the client. The example is built with a modern Trame 3 class-based structure.
 *   **Image:**
     ![Contour Geometry](docs/images/02_ClientView.png)
+
+---
+
+#### 2. Server-Side Contour Visualization (Remote Rendering)
+*   **Script:** [`02_ContourGeometry/RemoteViewRendering.py`](./vtk/02_ContourGeometry/RemoteViewRendering.py)
+*   **Description:** This application demonstrates server-side rendering of a VTK contour filter's output using `VtkRemoteView`. It loads a medical head scan (`head.vti`), allows users to adjust the isovalue with a slider, and streams the rendered images to the client. The example showcases handling both interactive and on-release slider updates by dynamically exposing the `end` event on the `VSlider` component using the `__events` attribute.
+*   **Image:**
+    ![Remote Contour Geometry](docs/images/RemoteViewRendering.png)
+
+---
+
+#### 3. Client-Side Contour Visualization (LocalViewRendering)
+*   **Script:** [`02_ContourGeometry/LocalViewRendering.py`](./vtk/02_ContourGeometry/LocalViewRendering.py)
+*   **Description:** This application demonstrates client-side VTK rendering using `VtkLocalView`. The entire VTK pipeline, including the render window, is managed in Python on the server, and `VtkLocalView` renders the scene directly in the browser. A slider controls the contour value. This example showcases a modern Trame 3 class-based structure for local rendering.
+*   **Image:**
+    ![Local Contour Geometry](docs/images/LocalViewRendering.png)
 
 ---
 
