@@ -190,6 +190,14 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+#### 2. Server-Side Contour Visualization (Remote Rendering)
+*   **Script:** [`02_ContourGeometry/RemoteViewRendering.py`](./vtk/02_ContourGeometry/RemoteViewRendering.py)
+*   **Description:** This application demonstrates server-side rendering of a VTK contour filter's output using `VtkRemoteView`. It loads a medical head scan (`head.vti`), allows users to adjust the isovalue with a slider, and streams the rendered images to the client. The example showcases handling both interactive and on-release slider updates by dynamically exposing the `end` event on the `VSlider` component using the `__events` attribute.
+*   **Image:**
+    ![Remote Contour Geometry](docs/images/RemoteViewRendering.png)
+
+---
+
 *More examples to come!*
 
 ## Running the Examples
