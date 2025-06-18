@@ -206,11 +206,11 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
-#### 4. Combined Local/Remote Contour Visualization
+#### 4.  Contour Visualization (Dynamic Local/Remote Rendering)
 *   **Script:** [`02_ContourGeometry/LocalViewRemoteViewRendering.py`](./vtk/02_ContourGeometry/LocalViewRemoteViewRendering.py)
 *   **Description:** This application demonstrates how to use both `VtkLocalView` (client-side rendering) and `VtkRemoteView` (server-side rendering) within the same Trame application. It allows the user to toggle between rendering modes at runtime and showcases advanced features like conditional UI rendering, managing multiple view contexts, and synchronizing UI controls (slider, buttons) with the active view.
 *   **Image:**
-    ![Combined Local/Remote Contour Geometry](docs/images/LocalViewRemoteViewRendering.png)
+    ![Dynamic Local/Remote Contour Geometry](docs/images/LocalViewRemoteViewRendering.png)
 
 ---
 
