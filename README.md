@@ -218,7 +218,7 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Script:** [`02_ContourGeometry/RemoteLocalViewRendering.py`](./vtk/02_ContourGeometry/RemoteLocalViewRendering.py)
 *   **Description:** This application demonstrates dynamic switching between local (client-side) and remote (server-side) rendering using the unified `VtkRemoteLocalView` component. The example has been fully refactored into a modern Trame 3 class-based structure. It showcases best practices such as using the component's `mounted` lifecycle hook for a reliable initial camera reset and exposing the `end` event on the `VSlider` to trigger view updates only on release, optimizing performance.
 *   **Image:**
-    ![Dynamic Local/Remote Contour Geometry](docs/images/LocalViewRemoteViewRendering.png) 
+    ![Unified Local/Remote Contour Geometry](docs/images/RemoteLocalViewRendering.png) 
 
 ---
 
