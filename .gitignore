@@ -1,1 +1,4 @@
 venv/
+
+# Ignore collaboration guidelines file
+COLLABORATION_GUIDELINES.md
