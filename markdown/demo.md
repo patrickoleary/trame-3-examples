@@ -2,8 +2,9 @@
 
 ## Image size and Viewer
 
-![gvf](http://www.aqcoder.com/gvf-project.png =x50)
-![ravenq](http://www.aqcoder.com/ravenq-qr.png =50x50)
+<img src="https://octodex.github.com/images/minion.png" width="100px" />
+
+![ravenq](https://octodex.github.com/images/minion.png)
 
 ## GitHub Table of Contents
 
@@ -13,9 +14,9 @@ Note: Only `h2` and `h3` are shown in toc.
 
 ## alter
 
-Markup is similar to fenced code blocks. Valid container types are `success`, `info`, `warning` and `error`.
+Markup is similar to fenced code blocks. Valid container types are `tip`, `info`, `warning`, `danger` and `details`.
 
-::: success
+::: tip
 You have got it.
 :::
 
@@ -27,55 +28,32 @@ You have new mail.
 You have new mail.
 :::
 
+::: danger
+Staying up all night is bad for health.
+:::
+
+::: success
+You have new mail.
+:::
+
 ::: error
 Staying up all night is bad for health.
 :::
 
-## mermaid charts
+## Subscript: H~2~O
 
-### mermaid Flowchart
-
-[Flowchart Syntax](http://knsv.github.io/mermaid/#flowcharts-basic-syntax)
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-```
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->John: Hello John, how are you?
-    loop Healthcheck
-        John->John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail...
-    John-->Alice: Great!
-    John->Bob: How about you?
-    Bob-->John: Jolly good!
-```
-
-## Definition list
-
-Term 1
-  ~ Definition 1
-
-Term 2
-  ~ Definition 2a
-  ~ Definition 2b
-
-[Definition List Syntax](http://pandoc.org/README.html#definition-lists)
+You can also use inline math: $H_2O$
 
 
-## AsciiMath
+## Superscript: 29^th^
 
-Inline AsciiMath: `@(1/2[1-(1/2)^n])/(1-(1/2))=s_n@`
+You can also use inline math: $29^{th}$
 
-```AsciiMath
+## ASCIIMath
+
+Inline ASCIIMath: ``(1/2[1-(1/2)^n])/(1-(1/2))=s_n``
+
+```ASCIIMath
 oint_Cx^3 dx+4y^2 dy
 
 2=(((3-x)xx2)/(3-x))
@@ -92,21 +70,11 @@ phi_n(kappa) = 1/(4pi^2 kappa^2)
 
 [AsciiMath Documentation](http://asciimath.org/)
 
-## Subscript: H~2~O
-
-You can also use inline math: `$H_2O$`
-
-
-## Superscript: 29^th^
-
-You can also use inline math: `$29^{th}$`
-
-
 ## Emoji: :panda_face: :sparkles: :camel: :boom: :pig:
 
 [Emoji Cheat Sheet](http://www.emoji-cheat-sheet.com/)
 
-## Fontawesome: :fa-car: :fa-flag: :fa-bicycle: :fa-leaf: :fa-heart:
+## Fontawesome: :fa fa-car: :fa-solid fa-flag: :fa-regular fa-flag: :fa fa-bicycle: :fa fa-leaf: :fa-solid fa-heart: :fa-regular fa-heart:
 
 [All the Font Awesome icons](http://fontawesome.io/icons/)
 
@@ -150,3 +118,36 @@ npm install markdown-it-vue
 | ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
+
+## Mermaid Chart Test
+
+```mermaid
+graph TD;
+    A[Christmas] -->|Get money| B(Go shopping);
+    B --> C{Let me think};
+    C -->|One| D[Laptop];
+    C -->|Two| E[iPhone];
+    C -->|Three| F[Car];
+```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+```
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+```

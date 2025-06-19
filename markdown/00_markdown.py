@@ -1,5 +1,4 @@
-#!/usr/bin/env -S uv run --preview --python 3.11
-# /// script
+#!/usr/bin/env -S uv run --script
 # requires-python = ">=3.11"
 # dependencies = [
 #   "trame[app]>=3.0.0b2",
@@ -8,14 +7,33 @@
 # ]
 # ///
 
-"""
-Markdown Viewer Application
-
-This application demonstrates how to display markdown content dynamically 
-using Trame 3 and Vue 3.
-
-It allows selecting different markdown files from a dropdown and renders them.
-
+# # Markdown Viewer
+#
+# This application demonstrates how to use the `trame-markdown` component
+# to render Markdown content within a Trame application.
+#
+# **Key Features:**
+# - Dynamically select and render local Markdown files.
+# - Reactive UI updates when a new file is chosen from a dropdown.
+# - Demonstrates file I/O and state management in a Trame app.
+#
+# ---
+#
+# Running if uv is available:
+# `uv run ./00_markdown.py` or `./00_markdown.py`
+#
+# Required Packages:
+# `uv` will handle the dependencies specified in the script header.
+#
+# As a fallback, you can manually install the required packages:
+# `pip install trame[app] trame-vuetify trame-markdown`
+#
+# Run as a Web Application (default):
+# `python ./00_markdown.py --server`
+#
+# Run as a Desktop Application:
+# `python ./00_markdown.py --app`
+#
 # Run in Jupyter Lab / Notebook:
 #   Rename and make sure this script ('00_markdown.py' to 'markdown_viewer.py')
 #   is in the same directory as your notebook, or in a directory included in Python's path.
@@ -24,7 +42,8 @@ It allows selecting different markdown files from a dropdown and renders them.
 #   from markdown_viewer import MarkdownViewerApp
 #   app = MarkdownViewerApp()
 #   app.server.show()
-"""
+#
+# ---
 
 import os
 from pathlib import Path
@@ -64,9 +83,9 @@ class MarkdownViewerApp(TrameApp):
 
         if md_file_path.exists() and md_file_path.is_file():
             with open(md_file_path, encoding="utf-8") as f:
-                self.ctrl.md_update(f.read())
+                self.state.md_content = f.read()
         else:
-            self.ctrl.md_update(f"# Error\nCould not find or read '{file_name}' at '{md_file_path}'.")
+            self.state.md_content = f"# Error\nCould not find or read '{file_name}' at '{md_file_path}'."
 
     def _build_ui(self):
         with SinglePageLayout(self.server) as layout:
@@ -83,8 +102,10 @@ class MarkdownViewerApp(TrameApp):
                 )
 
             with layout.content:
-                md = markdown.Markdown(classes="pa-4 mx-2")
-                self.ctrl.md_update = md.update
+                markdown.Markdown(
+                    content=("md_content",),
+                    classes="pa-4 mx-2",
+                )
 
 
 # -----------------------------------------------------------------------------
