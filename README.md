@@ -15,6 +15,7 @@ This repository showcases modern Trame application development using Trame 3+, V
   - [VTK / SimpleCone Examples](#vtk--simplecone-examples)
   - [VTK / ContourGeometry Examples](#vtk--contourgeometry-examples)
   - [VTK / MultiViews Examples](#vtk--multiviews-examples)
+  - [VTK / WASM Examples](#vtk--wasm-examples)
   - [PyDeck Examples](#pydeck-examples)
 - [Running the Examples](#running-the-examples)
 
@@ -223,6 +224,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates how to display multiple synchronized `VtkRemoteView` instances of the same VTK scene. Each view has a different background color, and all views share the same cone geometry. The resolution of the cone can be controlled globally via a slider. The example is built with a modern Trame 3 class-based structure and showcases a responsive grid layout for the views.
 *   **Image:**
     ![Multi-View Synchronization](docs/images/multiview.png)
+
+---
+
+### VTK / WASM Examples
+
+#### 1. Bike CFD with Client-Side Rendering (WASM)
+*   **Script:** [`vtk/04_wasm/wasm.py`](./vtk/04_wasm/wasm.py)
+*   **Description:** This application demonstrates client-side rendering of a bike CFD simulation using `trame-vtklocal` (VTK compiled to WebAssembly - WASM). It allows interaction with a line widget to change streamlines and adjust the bike's opacity. The example showcases `HttpFile` for remote data fetching and robust event handling between the WASM client and the Python server.
+*   **Image:**
+    ![WASM Bike CFD](docs/images/wasm.png)
 
 ---
 
