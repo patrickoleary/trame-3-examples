@@ -6,14 +6,15 @@ This repository showcases modern Trame application development using Trame 3+, V
 - [Migrating from Trame 2 / Vue 2 / Vuetify 2](#migrating-from-trame-2--vue-2--vuetify-2)
   - [Modern Application Structure: `@TrameApp()` and Inheritance](#modern-application-structure-trameapp-and-inheritance)
 - [Examples](#examples)
+  - [Vuetify Examples](#vuetify-examples)
+  - [Markdown Examples](#markdown-examples)
   - [Charts / Plotly Examples](#charts--plotly-examples)
   - [Charts / Altair-Vega Examples](#charts--altair-vega-examples)
   - [Charts / Matplotlib Examples](#charts--matplotlib-examples)
-  - [PyDeck Examples](#pydeck-examples)
-  - [Vuetify Examples](#vuetify-examples)
   - [VTK / ClientOnly Examples](#vtk--clientonly-examples)
   - [VTK / SimpleCone Examples](#vtk--simplecone-examples)
   - [VTK / ContourGeometry Examples](#vtk--contourgeometry-examples)
+  - [PyDeck Examples](#pydeck-examples)
 - [Running the Examples](#running-the-examples)
 
 ## Migrating from Trame 2 / Vue 2 / Vuetify 2
@@ -56,6 +57,40 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+### Vuetify Examples
+
+#### 1. DataFrame Table
+*   **Script:** [`00_dataframe-table.py`](./vuetify/00_dataframe-table.py)
+*   **Description:** This example demonstrates how to display a pandas DataFrame using the Vuetify 3 `VDataTable` component within a Trame 3 application. It showcases features like reactive search, sorting, selection, and dynamic grouping. The application is built using a modern class-based structure.
+*   **Image:**
+    ![DataFrame Table](docs/images/00_dataframe-table.png)
+
+---
+
+#### 2. Menu
+*   **Script:** [`01_menu.py`](./vuetify/01_menu.py)
+*   **Description:** This example demonstrates a simple Vuetify 3 `VMenu` component within a Trame 3 application. It shows how to create a menu with items that trigger a Python callback when clicked, all refactored into a modern class-based structure.
+*   **Image:**
+    ![Menu](docs/images/01_menu.png)
+
+#### 2. Router
+*   **Script:** [`02_router.py`](./vuetify/02_router.py)
+*   **Description:** This application demonstrates multi-page navigation using `trame-router` with Vuetify 3 components in a Trame 3 application. It features a navigation drawer, dynamically generated routes, and showcases how to structure a multi-view application.
+*   **Image:**
+    ![Router](docs/images/02_router.png)
+
+---
+
+### Markdown Examples
+
+#### 1. Markdown Viewer
+*   **Script:** [`00_markdown.py`](./markdown/00_markdown.py)
+*   **Description:** This application demonstrates how to use the `trame-markdown` component to render Markdown content within a Trame application. It allows dynamically selecting and rendering local Markdown files, showcasing a state-driven approach to content updates in a modern Trame 3 / Vue 3 class-based structure.
+*   **Image:**
+    ![Markdown Viewer](docs/images/00_markdown.png)
+
+---
+
 ### Charts / Plotly Examples
 
 #### 1. Plotly Charts Selector
@@ -91,48 +126,6 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates dynamic selection and display of various Matplotlib charts. It showcases responsive chart rendering using `trame.SizeObserver` to adapt to browser window resizing and high-DPI displays. The example is built with a modern Trame 3 / Vue 3 class-based structure.
 *   **Image:**
     ![Matplotlib Charts Selector](docs/images/00_matplotlib-charts.png)
-
----
-
-### PyDeck Examples
-
-#### 1. Mapping Demo
-*   **Script:** [`00_mapping-demo.py`](./pydeck/00_mapping-demo.py)
-*   **Description:** This application showcases the integration of Deck.gl with Trame for visualizing geospatial data. It demonstrates how to create interactive maps with multiple data layers (e.g., bike rentals, BART stops) using PyDeck and Mapbox, all within a modern Trame 3 / Vue 3 structure.
-*   **Image:**
-    ![Mapping Demo](docs/images/00_mapping-demo.png)
-
----
-
-#### 2. Uber NYC Pickups Visualization
-*   **Script:** [`01_uber-nyc-pickups.py`](./pydeck/01_uber-nyc-pickups.py)
-*   **Description:** Visualizes Uber pickup data across New York City using Deck.gl for heatmap layers on multiple maps (Overall NYC, JFK, Newark, and LaGuardia airports). Features an Altair-based histogram displaying pickups per minute for a user-selected hour. Includes a slider to filter data by the hour of the day. Demonstrates reactive updates, a Vuetify 3 grid layout, and Mapbox API integration for base maps. Requires a `MAPBOX_API_KEY` environment variable for map rendering.
-*   **Image:**
-    ![Uber NYC Pickups Visualization](docs/images/01_uber-nyc-pickups.png)
-
----
-
-### Vuetify Examples
-
-#### 1. DataFrame Table
-*   **Script:** [`00_dataframe-table.py`](./vuetify/00_dataframe-table.py)
-*   **Description:** This example demonstrates how to display a pandas DataFrame using the Vuetify 3 `VDataTable` component within a Trame 3 application. It showcases features like reactive search, sorting, selection, and dynamic grouping. The application is built using a modern class-based structure.
-*   **Image:**
-    ![DataFrame Table](docs/images/00_dataframe-table.png)
-
----
-
-#### 2. Menu
-*   **Script:** [`01_menu.py`](./vuetify/01_menu.py)
-*   **Description:** This example demonstrates a simple Vuetify 3 `VMenu` component within a Trame 3 application. It shows how to create a menu with items that trigger a Python callback when clicked, all refactored into a modern class-based structure.
-*   **Image:**
-    ![Menu](docs/images/01_menu.png)
-
-#### 2. Router
-*   **Script:** [`02_router.py`](./vuetify/02_router.py)
-*   **Description:** This application demonstrates multi-page navigation using `trame-router` with Vuetify 3 components in a Trame 3 application. It features a navigation drawer, dynamically generated routes, and showcases how to structure a multi-view application.
-*   **Image:**
-    ![Router](docs/images/02_router.png)
 
 ---
 
@@ -219,6 +212,24 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates dynamic switching between local (client-side) and remote (server-side) rendering using the unified `VtkRemoteLocalView` component. The example has been fully refactored into a modern Trame 3 class-based structure. It showcases best practices such as using the component's `mounted` lifecycle hook for a reliable initial camera reset and exposing the `end` event on the `VSlider` to trigger view updates only on release, optimizing performance.
 *   **Image:**
     ![Unified Local/Remote Contour Geometry](docs/images/RemoteLocalViewRendering.png) 
+
+---
+
+### PyDeck Examples
+
+#### 1. Mapping Demo
+*   **Script:** [`00_mapping-demo.py`](./pydeck/00_mapping-demo.py)
+*   **Description:** This application showcases the integration of Deck.gl with Trame for visualizing geospatial data. It demonstrates how to create interactive maps with multiple data layers (e.g., bike rentals, BART stops) using PyDeck and Mapbox, all within a modern Trame 3 / Vue 3 structure.
+*   **Image:**
+    ![Mapping Demo](docs/images/00_mapping-demo.png)
+
+---
+
+#### 2. Uber NYC Pickups Visualization
+*   **Script:** [`01_uber-nyc-pickups.py`](./pydeck/01_uber-nyc-pickups.py)
+*   **Description:** Visualizes Uber pickup data across New York City using Deck.gl for heatmap layers on multiple maps (Overall NYC, JFK, Newark, and LaGuardia airports). Features an Altair-based histogram displaying pickups per minute for a user-selected hour. Includes a slider to filter data by the hour of the day. Demonstrates reactive updates, a Vuetify 3 grid layout, and Mapbox API integration for base maps. Requires a `MAPBOX_API_KEY` environment variable for map rendering.
+*   **Image:**
+    ![Uber NYC Pickups Visualization](docs/images/01_uber-nyc-pickups.png)
 
 ---
 
