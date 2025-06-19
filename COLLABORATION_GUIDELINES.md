@@ -24,6 +24,7 @@
         - Update state management from older Trame patterns (e.g., `server.state.set("var_name", value)`) to the direct `self.state.variable_name = initial_value` pattern within the app class.
         - Modernize VTK pipeline integration, ensuring `VtkLocalView`, `VtkRemoteView`, `VtkPolyData` (and similar) components are used correctly with appropriate props and event bindings.
         - Update script headers (shebang, dependencies, usage instructions) and the `main()` function pattern to align with current best practices in the `patrickoleary/trame-3-examples` repository.
+        - Separate complex initialization logic, such as the VTK rendering pipeline, from the `__init__` method into a dedicated helper method (e.g., `_initialize_vtk()`). The `__init__` method should then call this new method, improving code organization and readability.
     - **Leverage Existing Patterns**: When refactoring, if UI elements or callback methods in the target script have direct analogues in existing style-guide compliant examples (from `patrickoleary/trame-3-examples`), prioritize adapting those proven code snippets rather than regenerating similar logic from scratch. This promotes consistency and efficiency.
 
 ## 4. Specific Task Guidelines
