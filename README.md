@@ -16,6 +16,7 @@ This repository showcases modern Trame application development using Trame 3+, V
   - [VTK / ContourGeometry Examples](#vtk--contourgeometry-examples)
   - [VTK / MultiViews Examples](#vtk--multiviews-examples)
   - [VTK / WASM Examples](#vtk--wasm-examples)
+  - [VTK / Applications](#vtk--applications)
   - [PyDeck Examples](#pydeck-examples)
 - [Running the Examples](#running-the-examples)
 
@@ -234,6 +235,16 @@ Below are the examples included in this repository. Each example demonstrates sp
 *   **Description:** This application demonstrates client-side rendering of a bike CFD simulation using `trame-vtklocal` (VTK compiled to WebAssembly - WASM). It allows interaction with a line widget to change streamlines and adjust the bike's opacity. The example showcases `HttpFile` for remote data fetching and robust event handling between the WASM client and the Python server.
 *   **Image:**
     ![WASM Bike CFD](docs/images/wasm.png)
+
+---
+
+### VTK / Applications
+
+#### 1. Multi-Filter VTK Pipeline
+*   **Script:** [`vtk/05_Applications/MultiFilter.py`](./vtk/05_Applications/MultiFilter.py)
+*   **Description:** A refactored and modernized Trame 3 application that demonstrates a VTK pipeline with multiple, dependent filters (a mesh and a contour). The UI provides dynamic controls for actor visibility, representation, color mapping, and opacity, all built with Vuetify 3. It showcases a class-based structure, reactive state management, and local/remote view toggling.
+*   **Image:**
+    ![Multi-Filter Application](docs/images/MultiFilter.png)
 
 ---
 
