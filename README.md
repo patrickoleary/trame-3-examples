@@ -248,6 +248,14 @@ Below are the examples included in this repository. Each example demonstrates sp
 
 ---
 
+#### 2. Remote Selection
+*   **Script:** [`vtk/05_Applications/RemoteSelection.py`](./vtk/05_Applications/RemoteSelection.py)
+*   **Description:** This application demonstrates how to link a VTK remote view with a Plotly chart, allowing for cross-selection between the two. It has been fully refactored into a modern Trame 3 class-based structure, fixing several bugs from the original implementation and ensuring robust, reactive state management.
+*   **Image:**
+    ![Remote Selection](docs/images/RemoteSelection.png)
+
+---
+
 ### PyDeck Examples
 
 #### 1. Mapping Demo
